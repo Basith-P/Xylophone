@@ -21,16 +21,19 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.black,
       body: SafeArea(
-        child: Column(
-          children: [
-            buildKey(color: Colors.red, noteNum: 1),
-            buildKey(color: Colors.orange, noteNum: 2),
-            buildKey(color: Colors.yellow, noteNum: 3),
-            buildKey(color: Colors.green, noteNum: 4),
-            buildKey(color: Colors.blue, noteNum: 5),
-            buildKey(color: Colors.indigo, noteNum: 6),
-            buildKey(color: Colors.purple, noteNum: 7),
-          ],
+        child: Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            children: [
+              buildKey(color: Colors.red, noteNum: 1),
+              buildKey(color: Colors.orange, noteNum: 2),
+              buildKey(color: Colors.yellow, noteNum: 3),
+              buildKey(color: Colors.green, noteNum: 4),
+              buildKey(color: Colors.blue, noteNum: 5),
+              buildKey(color: Colors.indigo, noteNum: 6),
+              buildKey(color: Colors.purple, noteNum: 7),
+            ],
+          ),
         ),
       ),
     );
